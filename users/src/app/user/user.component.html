@@ -1,0 +1,64 @@
+<div id="buscarH3">
+  <h3>Buscar por:</h3>
+</div>
+<div id="search">
+  <form class="example-container" [formGroup]="userForm" (ngSubmit)="getUser(userForm.value)">
+    <mat-form-field appearance="fill">
+      <mat-label>Todos</mat-label>
+      <mat-select name="selectSearch" formControlName="selectSearch" [(value)]="selectedSearch" (ngModelChange)="modelChanged()">
+        <mat-option value="TODOS">Todos</mat-option>
+        <mat-option value="ID">Id</mat-option>
+        <mat-option value="IDCOMPANY">Id Company</mat-option>
+        <mat-option value="EMAIL">Email</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field id="companyId">
+      <input matInput name="valueSearch" formControlName="valueSearch">
+      <mat-placeholder class="placeholder">{{selectedSearch}}</mat-placeholder>
+    </mat-form-field>
+    <button type="submit" [disabled]="!userForm.valid" mat-raised-button color="primary">Buscar</button>
+  </form>
+</div>
+
+
+<div id="listUser">
+  <h3>Lista de Usuários</h3>
+</div>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> Id </th>
+    <td mat-cell *matCellDef="let element"> {{element.idUser}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="companyId">
+    <th mat-header-cell *matHeaderCellDef> Company </th>
+    <td mat-cell *matCellDef="let element"> {{element.companyId}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="birthdate">
+    <th mat-header-cell *matHeaderCellDef> Birthdate </th>
+    <td mat-cell *matCellDef="let element"> {{element.birthdate}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef> </th>
+    <td mat-cell *matCellDef="let element">
+      
+      <span (click)="deleteUser(element.idUser)" class="material-icons">
+        delete
+        </span>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

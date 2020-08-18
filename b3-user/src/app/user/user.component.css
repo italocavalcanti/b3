@@ -1,0 +1,93 @@
+
+td.mat-cell.cdk-cell.cdk-column-email.mat-column-email{
+    width: 44%;
+}
+
+span.material-icons {
+  cursor: pointer;
+}
+
+
+th.mat-header-cell{
+    width: 20%;
+}
+
+table{
+    margin-left: 14%;
+    background-color:steelblue;
+}
+h3,mat-form-field{
+  color: steelblue;  
+}
+
+div#search{
+    width: 45%;
+    height: 60px;
+    background-color:steelblue;
+    margin-left:32%;
+    margin-top:1%;
+
+}
+input#mat-input-0{
+  color:white;
+}
+button{
+  margin-left:12%;
+}
+
+span.mat-option-text {
+    color:white !important;;
+    background-color: white !important;
+}
+mat-form-field.mat-form-field.ng-tns-c64-0.mat-primary.mat-form-field-type-mat-select.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-has-label.mat-form-field-hide-placeholder{
+    height: 60px;
+}
+#buscarH3{
+    margin-left:45%;
+}
+
+div#listUser{
+    margin-left: 45%;
+    margin-top:2%;
+}
+
+mat-form-field{
+  height: 20px !important;
+}
+
+table.mat-table.cdk-table.mat-elevation-z8{
+  margin-bottom: 2%;
+  width: 78%;
+}
+
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 20px;
+  }
+
+  mat-form-field.mat-form-field.ng-tns-c64-0.mat-primary.mat-form-field-type-mat-select.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-has-label.mat-form-field-hide-placeholder {
+      background:steelblue;
+  }
+  .mat-form-field-infix.ng-tns-c64-0{
+    background:steelblue;
+  }
+  mat-option#mat-option-0{
+    color:white!important
+  }
+  mat-option#mat-option-1{
+    color:white!important
+  }
+  mat-option#mat-option-2{
+    color:white!important
+  }
+  mat-form-field.mat-form-field.ng-tns-c64-0.mat-primary.mat-form-field-type-mat-select.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-has-label.mat-form-field-should-float{
+    background:steelblue;
+  }
+
+  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+      
+    color:white!important;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color:white!important;
+}

@@ -1,0 +1,13 @@
+
+<div id="divRemoveUser">
+    <h3>Remover Usuário</h3>
+
+  <form class="example-container" [formGroup]="userRemoveForm" (ngSubmit)="removeUser(userRemoveForm.value)">
+    <mat-form-field id = "id">
+      <input matInput type="number"  name="id" formControlName="id">
+      <mat-placeholder class="placeholder">Id usuário:1</mat-placeholder>
+    </mat-form-field>
+  
+    <button type="submit" [disabled]="!userRemoveForm.valid" mat-raised-button color="primary" >Remover</button>
+</form>
+</div>

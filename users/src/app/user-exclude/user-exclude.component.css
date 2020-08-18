@@ -1,0 +1,21 @@
+h3{
+    color:steelblue;
+}
+#id{
+    margin-left: 4%;  
+}
+
+#divRemoveUser{
+    margin-top: 4%;
+    margin-left: 4%;
+ }
+ 
+ form{
+     width: 40%;
+     background-color:steelblue;
+ }
+ button{
+    margin-left:30%; 
+    background-color: aliceblue !important;
+    color:steelblue !important;
+ }
