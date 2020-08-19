@@ -10,8 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.b3</groupId>
-	<artifactId>users</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>app</artifactId>
 	<name>users</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -88,6 +87,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.asciidoctor</groupId>
